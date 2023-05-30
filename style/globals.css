@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(/public/font/iranyekanwebblackfanum/fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+* {
+  box-sizing: border-box;
+  font-family: IRANYekanX !important;
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+}
+
+
+@layer base {
+  html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    box-sizing: border-box;
+  }
+
+  input,
+  select,
+  button {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 10px;
+  }
+}
+
+
+::-webkit-scrollbar {
+  background: #ccc;
+  border-radius: 0px;
+  border: 0;
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: rgb(53, 185, 149);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #777; 
+  border-radius: 20px;
+  border: 0;
+}
+
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.MuiTypography-root,
+.MuiTableCell-body {
+  box-sizing: border-box;
+  font-family: IRANYekanX !important;
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+}
